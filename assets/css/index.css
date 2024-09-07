@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+    --primary-color: #104D8D;
+    --secondary-color: #FED11D;
+    --tertiary-color: #FFF;
+    --fourth-color: #000;
+    --fifth-color: #FEF0EF;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.login{
+    display: flex;
+}
+
+.img{
+    margin: 0 auto;
+    height: 100vh;
+    width: 75%;
+    /* background-color: var(--tertiary-color); */
+    border-radius: 0 100% 100% 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.form{
+    margin: auto 200px;
+    display: block;
+    color: var(--fifth-color);
+    width: 25%;
+}
+
+.form h1, h4{
+    text-align: center;
+}
+
+.form h1{
+    padding: 20px;
+}
+
+form{
+    margin: 25px 0;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+label{
+    font-size: 14px;
+}
+
+input[type="text"], input[type="password"]{
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--fifth-color);
+    color: var(--fifth-color);
+    padding: 10px 0;
+    outline: none;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: #FED11D;
+    color: var(--fourth-color);
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
