@@ -13,13 +13,13 @@
         </div>
         <div class="form">
             <h1>e-KISLAP</h1>
-            <form action="dashboard.php" method="post">
+            <form action="assets/login_verify.php" method="post">
                 <h4>ADMIN LOGIN</h4>
                 <br><br>
                 <label>Username</label>
-                <input type="text"/>
+                <input type="text" name="username"/>
                 <label>Password</label>
-                <input type="password"/>
+                <input type="password" name="password"/>
                 <input type="submit" value="LOGIN"/>
             </form>
         </div>
