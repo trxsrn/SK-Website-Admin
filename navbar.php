@@ -10,14 +10,25 @@
 </head>
 <body>
     <div class="topnav-bar">
-        <div class="menu">
-            <li onclick="openNav()"><i class="fa-solid fa-bars"></i></li>
+        <div class="title-bar">
+            <div class="menu">
+                <li onclick="openNav()"><i class="fa-solid fa-bars"></i></li>
+            </div>
+            <div class="title">
+                <h4 id="title"><?php echo isset($navbarTitle) ? $navbarTitle : "KISLAP ADMIN"; ?></h4>
+            </div>
         </div>
         <div class="topbar-left">
             <li onclick="toggleMode()"><i id="mode-icon" class="fa-solid fa-moon"></i></li>
             <li><i class="fa-solid fa-bell"></i></li>
             <li><i class="fa-solid fa-gear"></i></li>
-            <li><i class="fa-solid fa-user"></i> &nbsp &nbsp Administrator &nbsp &nbsp<i class="fa-solid fa-caret-down"></i></li>
+            <li class="admin-dropdown">
+                <i class="fa-solid fa-user"></i> &nbsp &nbsp Administrator &nbsp &nbsp
+                <i class="fa-solid fa-caret-down"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+        </li>
         </div>
     </div>
     <div class="sidenav" id="sidenav">
@@ -27,12 +38,12 @@
             <ul class="sublinks">
                 <li><a href="content_editor.php">Content Editor</a></li>
                 <li><a href="banner.php">Banner</a></li>
-                <li><a href="">Announcements</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Transparency</a></li>
-                <li><a href="">Governance</a></li>
-                <li><a href="">Surveys and Polls</a></li>
+                <li><a href="announcements.php">Announcements</a></li>
+                <li><a href="events.php">Events</a></li>
+                <li><a href="projects.php">Projects</a></li>
+                <li><a href="transparency.php">Transparency</a></li>
+                <li><a href="governance.php">Governance</a></li>
+                <li><a href="surveysandpolls.php">Surveys and Polls</a></li>
             </ul>
         </li>
         <li class="head-sublinks"><a href="">Community Engagement <i class="fa-solid fa-caret-down"></i></a>

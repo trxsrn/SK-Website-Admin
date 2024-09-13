@@ -1,4 +1,7 @@
-<?php include_once 'navbar.php' ?>
+<?php 
+    $navbarTitle = "Dashboard";
+    include_once 'navbar.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,56 @@
         <div class="greetings">
             <p>Good Morning</p>
             <h1>Administrator</h1>
+        </div>
+        <div class="metrics">
+            <div class="announce">
+                <i class="fa-solid fa-bullhorn"></i>
+                <div class="details">
+                    <p>Announcements</p>
+                    <p>100</p>
+                    <button>Manage</button>
+                </div>
+            </div>
+            <div class="announce">
+                <i class="fa-solid fa-bullhorn"></i>
+                <div class="details">
+                    <p>Announcements</p>
+                    <p>100</p>
+                    <button>Manage</button>
+                </div>
+            </div>
+            <div class="announce">
+                <i class="fa-solid fa-bullhorn"></i>
+                <div class="details">
+                    <p>Announcements</p>
+                    <p>100</p>
+                    <button>Manage</button>
+                </div>
+            </div>
+            <div class="announce">
+                <i class="fa-solid fa-bullhorn"></i>
+                <div class="details">
+                    <p>Announcements</p>
+                    <p>100</p>
+                    <button>Manage</button>
+                </div>
+            </div>
+            <div class="announce">
+                <i class="fa-solid fa-bullhorn"></i>
+                <div class="details">
+                    <p>Announcements</p>
+                    <p>100</p>
+                    <button>Manage</button>
+                </div>
+            </div>
+            <div class="announce">
+                <i class="fa-solid fa-bullhorn"></i>
+                <div class="details">
+                    <p>Announcements</p>
+                    <p>100</p>
+                    <button>Manage</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

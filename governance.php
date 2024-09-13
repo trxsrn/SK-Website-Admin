@@ -1,5 +1,5 @@
 <?php 
-    $navbarTitle = "Banner";
+    $navbarTitle = "Governance";
     include_once 'navbar.php' 
 ?>
 <!DOCTYPE html>

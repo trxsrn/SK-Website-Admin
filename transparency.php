@@ -1,5 +1,5 @@
 <?php 
-    $navbarTitle = "Banner";
+    $navbarTitle = "Transparency";
     include_once 'navbar.php' 
 ?>
 <!DOCTYPE html>

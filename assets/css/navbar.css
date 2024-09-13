@@ -11,6 +11,7 @@
     --light-accent-color: #FF6F61; /* for buttons and highlights */
     --light-neutral-color: #333333; /*  for text and icons*/
     --light-highlight-color: #FFD700; /* for notifications and alerts */
+    --light-hovered-color: #0B3D71; 
     --dark-primary-color: #104D8D; /*  */
     --dark-background-color: #1E1E1E; /* the main background */
     --dark-secondary-color: #2D2D2D; /* for sections and cards */
@@ -29,6 +30,14 @@ li ul, li{
     background-color: var(--light-primary-color);
     padding: 20px;
     color: var(--light-secondary-color);
+}
+
+.title-bar{
+  display: flex;
+}
+
+.title{
+  margin: auto 0;
 }
 
 .menu li{
@@ -91,8 +100,23 @@ li ul, li{
 }
 
 .topbar-left li:hover{
-  background-color: var(--light-secondary-color);
+  background-color: var(--light-hovered-color);
   border-radius: 20px;
+}
+
+.admin-dropdown .dropdown-menu li{
+  display: none;
+  position: absolute;
+  top: 69px;
+  padding: 20px;
+  background-color: var(--light-primary-color);
+  color: var(--dark-text-color);
+  width: 100%;
+}
+
+
+.admin-dropdown:hover .dropdown-menu li{
+  display: block;
 }
 
 @media screen and (max-height: 450px) {
