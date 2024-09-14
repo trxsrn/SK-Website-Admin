@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --light-primary-color: #104D8D; /*  */
+    --light-background-color: #F2F2F2;  /* for backgrounds and sections */
+    --light-secondary-color: #E6E6E6; /* for sections and cards */
+    --light-accent-color: #FF6F61; /* for buttons and highlights */
+    --light-text-color: #333333; /*  for text and icons*/
+    --light-highlight-color: #FFD700; /* for notifications and alerts */
+    --dark-primary-color: #104D8D; /*  */
+    --dark-background-color: #1E1E1E; /* the main background */
+    --dark-secondary-color: #2D2D2D; /* for sections and cards */
+    --dark-accent-color: #FF6F61; /* for buttons and highlights */
+    --dark-text-color: #E0E0E0; /* for general text */
+    --dark-highlight-color: #FFD700; /* for notifications and alert */
+}
+
+.content{
+    background-color: var(--light-background-color);
+}
+
+.greetings{
+    padding: 20px;  
+    text-align: center;
+    color: var(--light-text-color);
+}
+
+.section{
+    display: flex;
+}
+
+.metrics{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calendar{
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 5px;
+}
+td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.today {
+    background-color:var(--light-primary-color);
+    color: white;
+}
+
+.activity{
+    width: 20%;
+}
+
+.activity-log, .calendar-of-events{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.activity-log p.title, .calendar-of-events p.title{
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: var(--light-primary-color);
+    color: var(--light-secondary-color);
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.events{
+    padding: 5px;
+}
+
+.events p.header{
+    text-align: left;
+}
+
+.events p{
+    text-align: center;
+}
+
+.summary, .details{
+    display: flex;
+    padding: 10px;
+}
+
+.summary{
+    gap: 20px;
+}
+
+.details{
+    justify-content: space-between;
+}
+
+.icon{
+    font-size: 40px;
+    text-align: center;
+}
+
+.icon-small{
+    font-size: 10px;
+    border: 2px solid black;
+}
+
+.count-label{
+    font-size: 12px;
+}
+
+.count p:nth-child(2){
+    font-weight: bolder;
+}
+
+.total-count{
+    font-size: 30px;
+}
+
+.sub-total{
+    font-size: 20px;
+}
+
+.announce{
+    background-color: white;
+    width: 210px;
+    height: max-content;
+    border-radius: 4px;
+    border-bottom: 2px solid var(--light-primary-color);
+}
+
+.details{
+   display: none;
+}
+
+
+
+.dark-mode .content{
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+}

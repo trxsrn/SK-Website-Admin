@@ -37,7 +37,7 @@
         <li class="head-sublinks"><a href="">Content Management <i class="fa-solid fa-caret-down"></i></a>
             <ul class="sublinks">
                 <li><a href="content_editor.php">Content Editor</a></li>
-                <li><a href="banner.php">Banner</a></li>
+                <li><a href="news.php">News</a></li>
                 <li><a href="announcements.php">Announcements</a></li>
                 <li><a href="events.php">Events</a></li>
                 <li><a href="projects.php">Projects</a></li>

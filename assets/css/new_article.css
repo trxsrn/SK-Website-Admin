@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light-primary-color: #104D8D; /*  */
+    --light-background-color: #F2F2F2;  /* for backgrounds and sections */
+    --light-secondary-color: #E6E6E6; /* for sections and cards */
+    --light-accent-color: #FF6F61; /* for buttons and highlights */
+    --light-text-color: #333333; /*  for text and icons*/
+    --light-highlight-color: #FFD700; /* for notifications and alerts */
+    --dark-primary-color: #104D8D; /*  */
+    --dark-background-color: #1E1E1E; /* the main background */
+    --dark-secondary-color: #2D2D2D; /* for sections and cards */
+    --dark-accent-color: #FF6F61; /* for buttons and highlights */
+    --dark-text-color: #E0E0E0; /* for general text */
+    --dark-highlight-color: #FFD700; /* for notifications and alert */
+}
+
+.content{
+    background-color: var(--light-background-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.content p a{
+    padding: 10px 20px;
+    color: var(--light-text-color);
+}
+
+img{
+    cursor: pointer;
+    width: max-content;
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
+}
+
+form{
+    display: flex;
+}
+
+.img{
+    width: 25%;
+    padding: 20px;
+}
+
+.article{
+    width: 75%;
+    padding: 20px;
+}
+
+label, input, textarea, button{
+    display: block;
+    margin: 20px 0;
+}
+
+.text-important{
+    width: 100%;
+}
+
+input, textarea{
+    padding: 10px;  
+}
+
+textarea{
+    
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons a{
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+}
+
+.schedbtn{
+    background-color: var(--dark-highlight-color);
+    color: var(--light-text-color);
+}
+
+.draftbtn{
+    background-color: var(--light-accent-color);
+    color: var(--light-secondary-color);
+}
+
+.publishbtn{
+    background-color: var(--dark-primary-color);
+    color: var(--light-secondary-color);
+}
+
+
+
