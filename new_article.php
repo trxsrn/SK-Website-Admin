@@ -12,29 +12,48 @@
 </head>
 <body>
     <div class="content">
-        <p><a href="news.php">News</a> > New Article </p> 
-        <form action="" method="POST">
-            <div class="img">
-                <img src="https://via.placeholder.com/320x250" style="cursor: pointer;" id="preview" onclick="selectimage()" height="250px" width="320px">
-                <input type="file" name="" id="image" onchange="previewImage()" style="display: none;" accept="image/*">
-                <label for="Source">Source</label>
-                <input type="text" name="Source" class="text-important" placeholder="eg. Facebook: Trixie Soriano">
-                <label for="Link">Link</label>
-                <input type="text" name="Link" class="text-important" placeholder="https://www.facebook.com">
-                <label for="tags">Tags</label>
-                <input type="text" name="tags" class="text-important" required/>   
-            </div>
-            <div class="article">
-            <label for="article_id">Article ID</label>
-            <input type="text" name="article_id" class="text-important" disabled/>
-                <label for="title">Title</label>
-                <input type="text" name="title" class="text-important" required/>
-                <label for="body">Body</label>
-                <textarea name="body" id="" cols="30" rows="80" class="text-important" required></textarea>
+        <form action="" method="POST">  
+            <div class="headers">
+                <div class="ribbon">
+                    <div class="text-content">
+                        <span>L</span>
+                    </div>
+                </div>
+                <div class="titlebar">
+                    <div class="back">
+                        <p><a href="news.php">News</a></p>
+                    </div>
+                </div>
                 <div class="buttons">
-                    <input type="submit" name="" value="SCHEDULE PUBLISH" class="schedbtn">
-                    <input type="submit" name="" value="SAVE AS DRAFT" class="draftbtn">
-                    <input type="submit" name="" value="PUBLISH" class="publishbtn">
+                        <button type="submit" class="schedbtn">
+                            <i class="fa-solid fa-clock"></i> SCHEDULE PUBLISH
+                        </button>
+                        <button type="submit" class="draftbtn">
+                            <i class="fa fa-save"></i> SAVE AS DRAFT
+                        </button>
+                        <button type="submit" class="publishbtn">
+                            <i class="fa-solid fa-upload"></i> PUBLISH
+                        </button>
+                </div>
+            </div>
+            <div class="form">
+                <div class="img">
+                    <img src="https://via.placeholder.com/320x250" style="cursor: pointer;" id="preview" onclick="selectimage()" height="250px" width="320px">
+                    <input type="file" name="" id="image" onchange="previewImage()" style="display: none;" accept="image/*">
+                    <label for="Source">Source</label>
+                    <input type="text" name="Source" class="text-important" placeholder="eg. Facebook: Trixie Soriano">
+                    <label for="Link">Link</label>
+                    <input type="text" name="Link" class="text-important" placeholder="https://www.facebook.com">
+                    <label for="tags">Tags</label>
+                    <input type="text" name="tags" class="text-important" required/>   
+                </div>
+                <div class="article">
+                <label for="article_id">Article ID</label>
+                <input type="text" name="article_id" class="text-important" disabled/>
+                    <label for="title">Title</label>
+                    <input type="text" name="title" class="text-important" required/>
+                    <label for="body">Body</label>
+                    <textarea name="body" id="" cols="30" rows="80" class="text-important" required></textarea>
                 </div>
             </div>
         </form>

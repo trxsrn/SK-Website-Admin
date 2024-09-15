@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="newAnnouncement" id="newAnnouncement">
+        <div class="details">
+            <div class="mb-1">
+                <label for="hotelNo" class="form-label my-0">Hotel ID No.</label>
+                <input name="hotelNo" readonly class="form-control" type="text" id="No">
+                <input class="form-control" name="rollNo" type="hidden">
+            </div>
+    
+            <div class="row mb-1" id="hotelimageInputs">
+    
+            </div>
+            <div class="mb-1">
+                <label for="HotelName" class="form-label my-0">Hotel Name</label>
+                <input name="HotelName" id="HotelName" class="form-control" type="text" placeholder="(ex. Casa Estralla Resort)" required>
+            </div>
+    
+            <div class="mb-1">
+                <label for="address" class="form-label my-0">Address</label>
+                <input name="address" id="address" class="form-control" type="text" placeholder="(ex. Bolinao, Pangasinan)" required>
+            </div>
+    
+            <div class="row mb-1">
+                <div class="mb-1 col">
+                    <label for="latitude" class="form-label my-0">Latitude</label>
+                    <input name="latitude" id="latitude" class="form-control" type="text" placeholder="Latitude" required>
+                </div>
+                <div class="mb-1 col">
+                    <label for="longitude" class="form-label my-0">Longitude</label>
+                    <input name="longitude" id="longitude" class="form-control" type="text" placeholder="Longitude" required>
+                </div>
+            </div>
+    
+            <div class="mb-1">
+                <label for="note" class="form-label my-0">Hotel Description</label>
+                <textarea name="note" id="note" class="form-control" placeholder="Description here...." required></textarea>
+            </div>
+    
+            <div class="row mb-1">
+                <div class="mb-1 col">
+                    <label for="mobileNumber" class="form-label my-0">Mobile Number</label>
+                    <input name="mobileNumber" id="mobileNumber" class="form-control" type="text" placeholder="Mobile Number" required>
+                </div>
+                <div class="mb-1 col">
+                    <label for="landline" class="form-label my-0">Landline</label>
+                    <input name="landline" id="landline" class="form-control" type="text" placeholder="Landline">
+                </div>
+    
+                <div class="mb-1 col">
+                    <label for="email" class="form-label my-0">Email</label>
+                    <input name="email" id="email" class="form-control" type="email" placeholder="Email" required>
+                </div>
+            </div>
+    
+            <div class="row mb-1">
+                <div class="mb-1 col">
+                    <label for="latitude" class="form-label my-0">GCash Account Name</label>
+                    <input name="latitude" id="gname" class="form-control" type="text" placeholder="(ex. John Paulo Nase)" required>
+                </div>
+                <div class="mb-1 col">
+                    <label for="longitude" class="form-label my-0">GCash Account Number</label>
+                    <input name="longitude" id="gnumber" class="form-control" type="text" placeholder="(ex. 09123456789)" required>
+                </div>
+                <div class="mb-1 col">
+                    <label for="latitude" class="form-label my-0">Maya Account Name</label>
+                    <input name="latitude" id="mname" class="form-control" type="text" placeholder="(ex. John Paulo Nase)" required>
+                </div>
+                <div class="mb-1 col">
+                    <label for="longitude" class="form-label my-0">Maya Account Number</label>`
+                    <input name="longitude" id="mnumber" class="form-control" type="text" placeholder="(ex. 09123456789)" required>
+                </div>
+            </div>
+    
+            <div class="text-center mt-3">
+                <button type="button" id="addHotelBtn" class="btn btn-dark px-5" onclick="addHotel()">Add Hotel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

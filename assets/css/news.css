@@ -25,4 +25,98 @@
     border-radius: 4px;
 }
 
+.metrics{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.announce{
+    text-align: right;
+    margin: 10px auto;
+    background-color: #333333;
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.announce:nth-child(1){
+    background: linear-gradient(-250deg, #6C757D, #40464b);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.announce:nth-child(2){
+    background: linear-gradient(-250deg, #28A745, #1a6e2e);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.announce:nth-child(3){
+    background: linear-gradient(-250deg,#D6D8DB, #9fa1a4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.announce:nth-child(4){
+    background: linear-gradient(-250deg,#007BFF, #014791);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.announce:nth-child(5){
+    background: linear-gradient(-250deg, var(--light-primary-color), #092d53);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon i{
+    font-size: 40px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.448);
+    font-weight: 800;
+}
+
+.announce .details p{
+    color: rgba(255, 255, 255, 0.448);
+}
+
+.announce .details p:nth-child(2) {
+    font-size: 30px;  
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.searchbytext{
+    width: 60%;
+}
+
+.searchandfilter{
+    width: 40%;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    background-color: var(--light-primary-color);
+    color: var(--light-secondary-color);
+    border-radius: 4px;
+}
+
+input[type="text"]{
+    width: 100%;
+}
+
+input, select{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--dark-background-color);
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    padding: 20px;
+}
+
 

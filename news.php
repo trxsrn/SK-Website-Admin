@@ -12,6 +12,55 @@
 </head>
 <body>
     <div class="content">
+        <div class="metrics">
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="details">
+                    <p>Draft</p>
+                    <p>100</p>
+                </div>
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="details">
+                    <p>Published</p>
+                    <p>100</p>
+                </div>
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-box-archive"></i>
+                </div>
+                <div class="details">
+                    <p>Archived</p>
+                    <p>100</p>
+                </div>
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-hourglass-start"></i>
+                </div>
+                <div class="details">
+                    <p>Scheduled</p>
+                    <p>100</p>
+                </div>     
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="details">
+                    <p>Total</p>
+                    <p>100</p>
+                </div>  
+            </div>
+            
+        </div>
+
             <input type="text" placeholder="Search.." class="form-control" id="searchInput" oninput="searchTable()">
             <button onclick="newArticle()">Make new Article</button>
             <table width="100%">

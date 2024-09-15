@@ -32,6 +32,76 @@
     color: var(--light-text-color);
 }
 
+.headers{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.ribbon {
+    margin: auto 0;
+    position: relative;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    display: inline-block;
+  }
+  
+  .ribbon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .ribbon::after {
+    margin: auto 0;
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid red;
+  }
+  
+  .ribbon span {
+    position: relative;
+    z-index: 1;
+    height: 100px;
+  }
+
+.titlebar{
+    margin: auto 0;
+    text-align: left;
+    background: var(--light-primary-color);
+    padding: 10px 0;
+}
+
+.titlebar p a{
+    color: var(--light-secondary-color);
+    text-decoration: none;
+}
+
+.titlebar p a{
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+
+
+.form{
+    display: flex;
+}
+
+
 img{
     cursor: pointer;
     width: max-content;
@@ -39,11 +109,6 @@ img{
     height: 250px;
     object-fit: cover;
 }
-
-form{
-    display: flex;
-}
-
 .img{
     width: 25%;
     padding: 20px;
@@ -67,33 +132,33 @@ input, textarea{
     padding: 10px;  
 }
 
-textarea{
-    
-}
-
 .buttons{
     display: flex;
-}
-
-.buttons a{
-    padding: 10px 20px;
-    margin: 20px;
-    border: none;
+    gap: 10px;
 }
 
 .schedbtn{
     background-color: var(--dark-highlight-color);
     color: var(--light-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 .draftbtn{
     background-color: var(--light-accent-color);
     color: var(--light-secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 .publishbtn{
     background-color: var(--dark-primary-color);
     color: var(--light-secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }
 
 

@@ -13,6 +13,63 @@
 </head>
 <body>
     <div class="content">
+        <div class="metrics">
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-regular fa-calendar"></i>
+                </div>
+                <div class="details">
+                    <p>Upcoming</p>
+                    <p>100</p>
+                </div>
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="details">
+                    <p>Ongoing</p>
+                    <p>100</p>
+                </div>
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="details">
+                    <p>Completed</p>
+                    <p>100</p>
+                </div>
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="details">
+                    <p>Cancelled</p>
+                    <p>100</p>
+                </div>     
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="details">
+                    <p>Drafts</p>
+                    <p>100</p>
+                </div>  
+            </div>
+            <div class="announce">
+                <div class="icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="details">
+                    <p>Total</p>
+                    <p>100</p>
+                </div>  
+            </div>
+        </div>
+
             <input type="text" placeholder="Search.." class="form-control" id="searchInput" oninput="searchTable()">
             <button>Make new Event</button>
             <table width="100%">
@@ -27,7 +84,7 @@
                         </tbody>
             </table>
     </div>
-            <script>
+    <script>
         // Fetch data from the server
         fetch('assets/getEvents.php')
         .then(response => response.json()) // Convert the response to JSON
