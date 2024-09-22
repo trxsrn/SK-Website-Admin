@@ -60,20 +60,38 @@
             </div>
             
         </div>
-
-            <input type="text" placeholder="Search.." class="form-control" id="searchInput" oninput="searchTable()">
-            <button onclick="newArticle()">Make new Article</button>
-            <table width="100%">
-                    <thead>
-                        <tr>
-                            <th>Article ID</th>
-                            <th>Title</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                        <tbody id="tbody1">
-                        </tbody>
+        <div class="announcements">
+            <form action="" method="post">
+                <div class="searchbytext">
+                    <input type="text" placeholder="Enter any keywords"/>
+                </div>
+                <div class="sortandfilter">
+                    <label for="searchby">Search by:</label>
+                    <input type="date" name="searchby" id="">
+                    <label for="filter">Filter</label>
+                    <select name="filter" id="filter">
+                        <option value="Active">Active</option>
+                        <option value="Drafts">Drafts</option>
+                        <option value="Archived">Archived</option>
+                    </select>
+                </div>
+                <div class="addnew">
+                    <button id="openNewAnnouncementFormbtn" data-bs-toggle="modal" data-bs-target="#newAnnouncementModal">NEW ANNOUNCEMENT</button>
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Date Modified</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody1">
+                </tbody>
             </table>
+        </div>
     </div>
             <script>
         function newArticle(){
