@@ -1,0 +1,17 @@
+.btn{
+    width: 7rem;
+    height: 80%;
+    color: var(--light-background-color);
+    border-radius: 5px;
+    border: none;
+}
+
+.edit-btn{
+    background-color: yellow;
+    color: var(--light-neutral-color);
+}
+
+.save-btn{
+    background-color: green;
+}
+

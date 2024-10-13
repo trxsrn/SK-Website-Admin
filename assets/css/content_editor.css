@@ -1,32 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Noto Sans", sans-serif;
+@import url("/SK Website Admin/assets/css/components/tabs.css");
+@import url("/SK Website Admin/assets/css/components/editor-button.css");
+@import url("/SK Website Admin/assets/css/components/tab-header.css");
+
+.content{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
 }
 
-:root{
-    --light-primary-color: #104D8D; /*  */
-    --light-background-color: #F2F2F2;  /* for backgrounds and sections */
-    --light-secondary-color: #E6E6E6; /* for sections and cards */
-    --light-accent-color: #FF6F61; /* for buttons and highlights */
-    --light-neutral-color: #333333; /*  for text and icons*/
-    --light-highlight-color: #FFD700; /* for notifications and alerts */
-    --dark-primary-color: #104D8D; /*  */
-    --dark-background-color: #1E1E1E; /* the main background */
-    --dark-secondary-color: #2D2D2D; /* for sections and cards */
-    --dark-accent-color: #FF6F61; /* for buttons and highlights */
-    --dark-text-color: #E0E0E0; /* for general text */
-    --dark-highlight-color: #FFD700; /* for notifications and alert */
+.banner-preview{
+    height: 10rem;
+    width: 25rem;
+    border: 1px dashed var(--light-accent-color);
 }
 
-.section{
-    background-color: var(--light-background-color);
-    margin: 30px;
-    border-radius: 10px; 
-    padding: 20px
-}
-
-.section h1{
-    font-size: 20px;
-}
 

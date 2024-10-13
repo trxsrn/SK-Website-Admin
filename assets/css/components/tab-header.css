@@ -1,0 +1,10 @@
+.headers{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+}
